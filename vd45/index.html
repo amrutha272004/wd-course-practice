@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Trnasition property</title>
+    <style>
+        .container{
+            background-color: black;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: rgb(184, 22, 22);
+            width: 100px;
+            height: 100px;
+            
+        }
+        .box:hover{
+           
+            transform:scale(5,5);
+            transition-duration: 1s;
+            transition-timing-function:ease-out;
+            transition-delay: 0s;
+            background-color: bisque;
+
+        }
+           
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box"></div>
+    </div>
+    
+</body>
+</html>

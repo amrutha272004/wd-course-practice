@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX 8</title>
+    <style>
+        .container{
+            width: 80vw;
+            background-color: blue;
+            height: 70vh;
+            display: flex;
+            justify-content:start;
+            align-items: end;
+            transform: rotateX('90deg');
+            
+            
+        }
+        .box {
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+  border-radius: 80px;
+  animation: bounceMove 5s ease-in-out infinite;
+  position: relative;
+}
+
+@keyframes bounceMove {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(100px, -150px);
+  }
+  50% {
+    transform: translate(200px, 0);
+  }
+  75% {
+    transform: translate(300px, -150px);
+  }
+  100% {
+    transform: translate(400px, 0);
+  }
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>

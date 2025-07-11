@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on css selectors</title>
+
+    <style>
+        .box:first-child {
+
+            background-color: rgb(215, 30, 61);
+        }
+
+        .boxes {
+            border: 2px solid blue;
+            color: rgb(171, 21, 231)
+        }
+
+        .box1::first-line {
+            color: rgb(29, 29, 39);
+
+        }
+
+        .box {
+            padding-top: 45px
+        }
+
+        .box:nth-child(odd) {
+            background-color: rosybrown;
+        }
+
+        .box:nth-last-child(2) {
+            background-color: blue;
+        }
+
+        .boxes::before {
+            content: "wd course";
+            
+
+        }
+
+        .boxes::after {
+            content: "harry";
+        }
+
+        ::selection {
+            background-color: aqua;
+            color: rgb(163, 220, 201);
+        }
+
+        .box::first-letter {
+            color: cadetblue;
+            font-size: 32px;
+        }
+        input::placeholder{
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">im first box</div>
+        <div class="box box1">im box</div>
+        <div class="box">im box</div>
+        <input type="text" placeholder="enter ur name">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Animations</title>
+    <style>
+        .container{
+            width:50vw;
+            height:50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+        }
+        
+        .box{
+            width:100px;
+            height:100px;
+            align-items: center;
+            background-color: black;
+           /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: amruthaAnimations 1s ease-in-out 1s infinite alternate-reverse;
+
+        }
+        @keyframes amruthaAnimations{
+            20%{
+                transform: rotate(30deg);
+
+            }
+            30%{
+                transform: rotate(60deg) ;
+            }
+            100%{
+                transform: rotate(180deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+    
+</body>
+</html>

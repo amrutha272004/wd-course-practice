@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>PERSONAL INFO</h1>
+    <form action="post"> 
+        <label for="username">Enter ur username</label>
+        <input type="text" name="username" placeholder="enter ur username">  
+        <div>
+        <label for="gender">Gender:</label> 
+        <input type="radio"name="gender"placeholder="enter gender">male
+        <input type="radio"name="gender"placeholder="enter gender">Female
+        </div>
+        <div>
+            <label for="fav movie">Movie list:</label>
+            <input type="checkbox"name="movie" placeholder="fav movie">KGF
+            <input type="checkbox"name="movie" placeholder="fav movie">ui
+            <input type="checkbox"name="movie" placeholder="fav movie">ammu
+            <input type="checkbox"name="movie" placeholder="fav movie">max
+            <input type="checkbox"name="movie" placeholder="fav movie">movie
+            <input type="checkbox"name="movie" placeholder="fav movie">ui
+          </div>
+          <div>
+            <label for="comment">enter your comment:</label>
+            <br>
+            <textarea name="comment" rows="4" cols="50" placeholder="enter ur comment here"></textarea>
+          </div>
+          <div>
+            <select name="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+          </select>
+
+          </div>
+    </form>
+</body>
+</html>

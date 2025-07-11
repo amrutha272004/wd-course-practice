@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS media query</title>
+    <style>
+        body{
+            background-color: brown;
+        }
+         @media screen and (orientation: portrait) {
+            body{
+                border: 10px solid purple;
+            }
+        }
+        @media screen and (max-width: 100px) {
+            body{
+                background-color: blue;
+            }
+           
+             
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        Hey I am a red body guy!
+    </div>
+
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>
