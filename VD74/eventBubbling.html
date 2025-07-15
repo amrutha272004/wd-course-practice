@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            padding: 100px 25px;
+            background-color: aqua;
+
+        }
+
+        .childcontainer {
+            border: 2px solid black;
+            padding: 50px 25px;
+            background-color: rgb(213, 224, 224);
+
+        }
+
+        .child {
+            border: 2px solid black;
+            padding: 20px 25px;
+            background-color: rgb(232, 222, 22);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="childcontainer">
+            <div class="child">
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        //  document.querySelector(".child").addEventListener("click",()=>{
+        //      alert("child was clicked")
+        //  })
+
+        document.querySelector(".childcontainer").addEventListener("click", () => {
+            alert("child container was clicked")
+        });
+
+        //  document.querySelector(".container").addEventListener("click",()=>{
+        //     alert("container  was clicked")
+        // });
+
+
+        let a = setInterval(() => {
+            document.querySelector(".childcontainer").style.backgroundcolor = "red";
+
+        }, 3000
+        );
+        console.log(a)
+    </script>
+</body>
+
+</html>
